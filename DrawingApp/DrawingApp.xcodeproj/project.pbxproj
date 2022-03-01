@@ -15,6 +15,9 @@
 		BC7ECF9627CCB90600BC6AEC /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF9427CCB90600BC6AEC /* Factory.swift */; };
 		BC7ECF9927CCCB3300BC6AEC /* step1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7ECF9827CCCB3300BC6AEC /* step1_1.png */; };
 		BC7ECF9A27CCCB3300BC6AEC /* step1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7ECF9827CCCB3300BC6AEC /* step1_1.png */; };
+		BC7ECF9C27CDE83400BC6AEC /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF9B27CDE83400BC6AEC /* CanvasViewController.swift */; };
+		BC7ECF9E27CDE83D00BC6AEC /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF9D27CDE83D00BC6AEC /* PanelViewController.swift */; };
+		BC7ECFA027CDF7BC00BC6AEC /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF9F27CDF7BC00BC6AEC /* Plane.swift */; };
 		BCE3CB8027CC6D8E004F2AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CB7F27CC6D8E004F2AFE /* AppDelegate.swift */; };
 		BCE3CB8227CC6D8E004F2AFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CB8127CC6D8E004F2AFE /* SceneDelegate.swift */; };
 		BCE3CB8427CC6D8E004F2AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CB8327CC6D8E004F2AFE /* ViewController.swift */; };
@@ -48,6 +51,9 @@
 		BC7ECF9127CCB8CA00BC6AEC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BC7ECF9427CCB90600BC6AEC /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		BC7ECF9827CCCB3300BC6AEC /* step1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step1_1.png; sourceTree = "<group>"; };
+		BC7ECF9B27CDE83400BC6AEC /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
+		BC7ECF9D27CDE83D00BC6AEC /* PanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelViewController.swift; sourceTree = "<group>"; };
+		BC7ECF9F27CDF7BC00BC6AEC /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Plane.swift; path = DrawingApp/Controller/Plane.swift; sourceTree = SOURCE_ROOT; };
 		BCE3CB7C27CC6D8E004F2AFE /* DrawingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE3CB7F27CC6D8E004F2AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE3CB8127CC6D8E004F2AFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +98,7 @@
 		BC7ECF9027CCB48D00BC6AEC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BC7ECF9F27CDF7BC00BC6AEC /* Plane.swift */,
 				BC7ECF8D27CCB46A00BC6AEC /* Rectangle.swift */,
 				BC7ECF9427CCB90600BC6AEC /* Factory.swift */,
 				BC7ECF9127CCB8CA00BC6AEC /* Color.swift */,
@@ -170,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				BCE3CB8327CC6D8E004F2AFE /* ViewController.swift */,
+				BC7ECF9B27CDE83400BC6AEC /* CanvasViewController.swift */,
+				BC7ECF9D27CDE83D00BC6AEC /* PanelViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -328,10 +337,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC7ECF8E27CCB46A00BC6AEC /* Rectangle.swift in Sources */,
+				BC7ECFA027CDF7BC00BC6AEC /* Plane.swift in Sources */,
 				BCE3CB8427CC6D8E004F2AFE /* ViewController.swift in Sources */,
 				BC7ECF9527CCB90600BC6AEC /* Factory.swift in Sources */,
+				BC7ECF9E27CDE83D00BC6AEC /* PanelViewController.swift in Sources */,
 				BCE3CB8027CC6D8E004F2AFE /* AppDelegate.swift in Sources */,
 				BC7ECF9227CCB8CA00BC6AEC /* Color.swift in Sources */,
+				BC7ECF9C27CDE83400BC6AEC /* CanvasViewController.swift in Sources */,
 				BCE3CB8227CC6D8E004F2AFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,15 +10,15 @@ import Foundation
 class Rectangle: CustomStringConvertible {
     private var id: String
     
-    private var width: Double
-    private var height: Double
+    var width: Double
+    var height: Double
     
-    private var positionX: Double
-    private var positionY: Double
+    var x: Double
+    var y: Double
     
-    private var color: Color
+    var color: Color
     
-    init(width: Double, height: Double, positionX: Double, positionY: Double, color: Color) {
+    init(width: Double, height: Double, x: Double, y: Double, color: Color) {
         self.id = {
             var id = ""
             let partOfUUIDString = UUID().uuidString.suffix(9)
@@ -30,13 +30,15 @@ class Rectangle: CustomStringConvertible {
         }()
         self.width = width
         self.height = height
-        self.positionX = positionX
-        self.positionY = positionY
+        self.x = x
+        self.y = y
         self.color = color
     }
     
+    
     var description: String {
-        return "(\(id)), X:\(positionX), Y:\(positionY), W\(width), H\(height), R:\(color.red), G:\(color.green), B:\(color.blue), A: \(color.alpha)"
+        return "(\(id)), X:\(x), Y:\(y), W\(width), H\(height), R:\(color.red), G:\(color.green), B:\(color.blue), A: \(color.alpha)"
     }
+    
 }
 
