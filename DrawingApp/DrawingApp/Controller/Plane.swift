@@ -48,7 +48,7 @@ class Plane {
         delegate?.didUpdateRectangles(self)
     }
     
-    func selected(x: Double, y: Double) {
+    func tap(x: Double, y: Double) {
         let selectedRectangles = rectangles.filter { rectangle in
             (rectangle.x...rectangle.width+rectangle.x).contains(x)
             && (rectangle.y...rectangle.height+rectangle.y).contains(y)

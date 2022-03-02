@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1806BA27CF07D70057679D /* PlaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1806B927CF07D70057679D /* PlaneTests.swift */; };
 		BC7ECF8E27CCB46A00BC6AEC /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF8D27CCB46A00BC6AEC /* Rectangle.swift */; };
 		BC7ECF8F27CCB46A00BC6AEC /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF8D27CCB46A00BC6AEC /* Rectangle.swift */; };
 		BC7ECF9227CCB8CA00BC6AEC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF9127CCB8CA00BC6AEC /* Color.swift */; };
@@ -26,7 +27,6 @@
 		BCE3CB8727CC6D8E004F2AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE3CB8527CC6D8E004F2AFE /* Main.storyboard */; };
 		BCE3CB8927CC6D8F004F2AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE3CB8827CC6D8F004F2AFE /* Assets.xcassets */; };
 		BCE3CB8C27CC6D8F004F2AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE3CB8A27CC6D8F004F2AFE /* LaunchScreen.storyboard */; };
-		BCE3CB9727CC6D90004F2AFE /* DrawingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CB9627CC6D90004F2AFE /* DrawingAppTests.swift */; };
 		BCE3CBA127CC6D90004F2AFE /* DrawingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CBA027CC6D90004F2AFE /* DrawingAppUITests.swift */; };
 		BCE3CBA327CC6D90004F2AFE /* DrawingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CBA227CC6D90004F2AFE /* DrawingAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC1806B927CF07D70057679D /* PlaneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneTests.swift; sourceTree = "<group>"; };
 		BC7ECF8D27CCB46A00BC6AEC /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Rectangle.swift; path = DrawingApp/Model/Model/Rectangle.swift; sourceTree = SOURCE_ROOT; };
 		BC7ECF9127CCB8CA00BC6AEC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BC7ECF9427CCB90600BC6AEC /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 		BCE3CB8B27CC6D8F004F2AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCE3CB8D27CC6D8F004F2AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCE3CB9227CC6D90004F2AFE /* DrawingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCE3CB9627CC6D90004F2AFE /* DrawingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAppTests.swift; sourceTree = "<group>"; };
 		BCE3CB9C27CC6D90004F2AFE /* DrawingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE3CBA027CC6D90004F2AFE /* DrawingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAppUITests.swift; sourceTree = "<group>"; };
 		BCE3CBA227CC6D90004F2AFE /* DrawingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		BCE3CB9527CC6D90004F2AFE /* DrawingAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				BCE3CB9627CC6D90004F2AFE /* DrawingAppTests.swift */,
+				BC1806B927CF07D70057679D /* PlaneTests.swift */,
 			);
 			path = DrawingAppTests;
 			sourceTree = "<group>";
@@ -357,9 +357,9 @@
 				BC7ECF9627CCB90600BC6AEC /* Factory.swift in Sources */,
 				BC7ECF8F27CCB46A00BC6AEC /* Rectangle.swift in Sources */,
 				BC7ECFA127CE207E00BC6AEC /* Plane.swift in Sources */,
-				BCE3CB9727CC6D90004F2AFE /* DrawingAppTests.swift in Sources */,
 				BC7ECFA227CE208300BC6AEC /* CanvasViewController.swift in Sources */,
 				BC7ECF9327CCB8CA00BC6AEC /* Color.swift in Sources */,
+				BC1806BA27CF07D70057679D /* PlaneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,7 +40,7 @@ class CanvasViewController: UIViewController, PlaneDelegate {
     @objc func handleTap(_ gesture: UITapGestureRecognizer) {
         
         let location = gesture.location(in: view)
-        plane.selected(x: Double(location.x), y: Double(location.y))
+        plane.tap(x: Double(location.x), y: Double(location.y))
         
         guard let gestureView = gesture.view as? RectangleView else { return }
         gestureView.layer.borderWidth = 3
