@@ -56,7 +56,7 @@
             <objects>
                 <viewController id="mgu-yg-NkZ" customClass="CanvasViewController" customModule="DrawingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JgX-HC-VyV">
-                        <rect key="frame" x="0.0" y="0.0" width="860" height="820"/>
+                        <rect key="frame" x="0.0" y="0.0" width="859.5" height="820"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supplementary Canvas Su ff (C C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ns-Sc-VF6">

@@ -22,16 +22,29 @@ class CanvasViewController: UIViewController, PlaneDelegate {
             subview is RectangleView
         }).count
         
-        for (index, rect) in plane.rectangles.enumerated() {
+        for index in 0..<plane.rectangleCount {
             if index < existingViewCount { continue }
             DispatchQueue.main.async {
-                self.view.addSubview(RectangleView(from: rect))
+                let rectangleView = RectangleView(from: plane[index])
+                let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
+                rectangleView.addGestureRecognizer(tap)
+                self.view.addSubview(rectangleView)
             }
         }
     }
     
     @IBAction func addRectanglePressed(_ sender: UIButton) {
         plane.addRandomRectangle()
+    }
+    
+    @objc func handleTap(_ gesture: UITapGestureRecognizer) {
+        
+        let location = gesture.location(in: view)
+        plane.selected(x: Double(location.x), y: Double(location.y))
+        
+        guard let gestureView = gesture.view as? RectangleView else { return }
+        gestureView.layer.borderWidth = 3
+        gestureView.layer.borderColor = UIColor.link.cgColor
     }
 }
 
