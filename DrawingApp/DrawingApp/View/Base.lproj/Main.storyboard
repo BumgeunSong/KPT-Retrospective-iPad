@@ -13,36 +13,58 @@
             <objects>
                 <viewController id="l8x-Ot-BnL" customClass="CanvasViewController" customModule="DrawingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xo9-MY-jyf">
-                        <rect key="frame" x="0.0" y="0.0" width="859.5" height="820"/>
+                        <rect key="frame" x="0.0" y="0.0" width="860" height="820"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I43-gx-lAf">
-                                <rect key="frame" x="380" y="696" width="100" height="88"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qA0-eP-PRU">
+                                <rect key="frame" x="330" y="696" width="200" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I43-gx-lAf">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" image="rectangle" catalog="system" imagePlacement="top" title="사각형">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addRectanglePressed:" destination="l8x-Ot-BnL" eventType="touchUpInside" id="xMp-E6-HpT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW4-el-aqp">
+                                        <rect key="frame" x="104" y="0.0" width="96" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" image="photo.artframe" catalog="system" imagePlacement="top" title="사진">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addPhotoPressed:" destination="l8x-Ot-BnL" eventType="touchUpInside" id="bwj-ON-ux6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="fLn-Ni-txr"/>
-                                    <constraint firstAttribute="height" constant="88" id="sAt-g6-BkP"/>
+                                    <constraint firstAttribute="height" constant="80" id="IIC-I9-LCq"/>
+                                    <constraint firstAttribute="width" constant="200" id="qwU-C5-Tj4"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="rectangle" catalog="system" imagePlacement="top" title="사각형">
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                    <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="addRectanglePressed:" destination="l8x-Ot-BnL" eventType="touchUpInside" id="xMp-E6-HpT"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sws-bt-2LQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sws-bt-2LQ" firstAttribute="bottom" secondItem="I43-gx-lAf" secondAttribute="bottom" constant="16" id="RzH-do-eS1"/>
-                            <constraint firstItem="I43-gx-lAf" firstAttribute="centerX" secondItem="xo9-MY-jyf" secondAttribute="centerX" id="Xlh-vQ-RJh"/>
+                            <constraint firstItem="sws-bt-2LQ" firstAttribute="bottom" secondItem="qA0-eP-PRU" secondAttribute="bottom" constant="24" id="KZt-q7-7Fe"/>
+                            <constraint firstItem="qA0-eP-PRU" firstAttribute="centerX" secondItem="xo9-MY-jyf" secondAttribute="centerX" id="eZJ-R5-Of8"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -137,6 +159,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="photo.artframe" catalog="system" width="128" height="93"/>
         <image name="rectangle" catalog="system" width="128" height="93"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -7,9 +7,13 @@
 
 import UIKit
 
-class CanvasViewController: UIViewController {
+class CanvasViewController: UIViewController,
+                            UIImagePickerControllerDelegate,
+                            UINavigationControllerDelegate {
     private var plane = Plane()
     private var viewIDMap = [String: UIView]()
+    
+    private let photoPickerController = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +22,8 @@ class CanvasViewController: UIViewController {
         
         setUpInitialModels()
         setUpRecognizer()
+        
+        photoPickerController.delegate = self
     }
 }
 
@@ -69,6 +75,28 @@ extension CanvasViewController {
     private func addViewID(_ new: BaseView) {
         viewIDMap[new.id] = new
     }
+}
+
+// MARK: - Use Case: Add New Photo
+
+extension CanvasViewController {
+    
+    @IBAction func addPhotoPressed(_ sender: UIButton) {
+        present(photoPickerController, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        //
+        guard let image = info[.originalImage] as? UIImage else { return }
+        self.didPhotoSelected(image)
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func didPhotoSelected(_ image: UIImage) {
+        print("Photo will be created")
+    }
+    
 }
 
 // MARK: - Use Case: Select Rectangle
