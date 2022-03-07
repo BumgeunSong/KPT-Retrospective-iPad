@@ -32,19 +32,23 @@ class PanelViewController: UIViewController {
 
 extension PanelViewController {
     @objc func didSelectViewModel(_ notification: Notification) {
-        guard let selected = notification.userInfo?["new"] as? ViewModel? else { return }
-        
-        guard let selected = selected else {
-            clearPanel()
+
+        guard let selected = notification.userInfo?["new"] as? ViewModel else {
+            clearColorButton()
+            clearAlphaSlider()
             return
         }
         
         if let colorMutableViewModel = selected as? ColorMutable {
             displayColor(colorMutableViewModel)
+        } else {
+            clearColorButton()
         }
         
         if let alphaMutableViewModel = selected as? AlphaMutable {
             displayAlpha(alphaMutableViewModel)
+        } else {
+            clearAlphaSlider()
         }
     }
     
@@ -71,10 +75,13 @@ extension PanelViewController {
         AlphaLabel.text = selectedAlphaString
     }
     
-    private func clearPanel() {
+    private func clearColorButton() {
         colorButton.setTitle("", for: .normal)
         colorButton.tintColor = UIColor.systemGray
         colorButton.isEnabled = false
+    }
+    
+    private func clearAlphaSlider() {
         AlphaLabel.text = ""
         alphaSlider.value = 0
         alphaSlider.isEnabled = false
