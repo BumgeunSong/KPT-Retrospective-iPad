@@ -19,7 +19,6 @@
 		BC1806CA27CF51730057679D /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1806BC27CF3E4C0057679D /* Log.swift */; };
 		BC1806CB27CF51760057679D /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF9427CCB90600BC6AEC /* Factory.swift */; };
 		BC1806CD27CF565D0057679D /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1806CC27CF565D0057679D /* PanelViewController.swift */; };
-		BC1806D127D06DEF0057679D /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1806D027D06DEF0057679D /* RectangleView.swift */; };
 		BC1806D727D095E30057679D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1806D627D095E30057679D /* UIColorExtension.swift */; };
 		BC1806D927D0D3D10057679D /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1806D827D0D3D10057679D /* Converter.swift */; };
 		BC7ECF8E27CCB46A00BC6AEC /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF8D27CCB46A00BC6AEC /* Rectangle.swift */; };
@@ -27,11 +26,11 @@
 		BC7ECF9227CCB8CA00BC6AEC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF9127CCB8CA00BC6AEC /* Color.swift */; };
 		BC7ECF9327CCB8CA00BC6AEC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF9127CCB8CA00BC6AEC /* Color.swift */; };
 		BC7ECF9527CCB90600BC6AEC /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF9427CCB90600BC6AEC /* Factory.swift */; };
-		BC7ECF9927CCCB3300BC6AEC /* step1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7ECF9827CCCB3300BC6AEC /* step1_1.png */; };
-		BC7ECF9A27CCCB3300BC6AEC /* step1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7ECF9827CCCB3300BC6AEC /* step1_1.png */; };
 		BC802D4D27D5A007002BD536 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC802D4C27D5A007002BD536 /* Photo.swift */; };
-		BC802D4F27D5A9F2002BD536 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC802D4E27D5A9F2002BD536 /* PhotoView.swift */; };
 		BC802D5327D5B000002BD536 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC802D5227D5B000002BD536 /* CanvasView.swift */; };
+		BC802D5527D5B4C8002BD536 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC802D5427D5B4C8002BD536 /* ViewModel.swift */; };
+		BC802D5627D5C7C1002BD536 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC802D5427D5B4C8002BD536 /* ViewModel.swift */; };
+		BC802D5727D5C7C6002BD536 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC802D4C27D5A007002BD536 /* Photo.swift */; };
 		BCE3CB8027CC6D8E004F2AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CB7F27CC6D8E004F2AFE /* AppDelegate.swift */; };
 		BCE3CB8227CC6D8E004F2AFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CB8127CC6D8E004F2AFE /* SceneDelegate.swift */; };
 		BCE3CB8427CC6D8E004F2AFE /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CB8327CC6D8E004F2AFE /* CanvasViewController.swift */; };
@@ -67,16 +66,14 @@
 		BC1806C227CF41C30057679D /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		BC1806C427CF49A90057679D /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		BC1806CC27CF565D0057679D /* PanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelViewController.swift; sourceTree = "<group>"; };
-		BC1806D027D06DEF0057679D /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 		BC1806D627D095E30057679D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BC1806D827D0D3D10057679D /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		BC7ECF8D27CCB46A00BC6AEC /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Rectangle.swift; path = DrawingApp/Model/Model/Rectangle.swift; sourceTree = SOURCE_ROOT; };
 		BC7ECF9127CCB8CA00BC6AEC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BC7ECF9427CCB90600BC6AEC /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
-		BC7ECF9827CCCB3300BC6AEC /* step1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step1_1.png; sourceTree = "<group>"; };
 		BC802D4C27D5A007002BD536 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		BC802D4E27D5A9F2002BD536 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		BC802D5227D5B000002BD536 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		BC802D5427D5B4C8002BD536 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BCE3CB7C27CC6D8E004F2AFE /* DrawingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE3CB7F27CC6D8E004F2AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE3CB8127CC6D8E004F2AFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +87,7 @@
 		BCE3CB9C27CC6D90004F2AFE /* DrawingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE3CBA027CC6D90004F2AFE /* DrawingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAppUITests.swift; sourceTree = "<group>"; };
 		BCE3CBA227CC6D90004F2AFE /* DrawingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BCE3CBAF27CC6E84004F2AFE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = DrawingApp/Resource/README.md; sourceTree = SOURCE_ROOT; };
+		BCE3CBAF27CC6E84004F2AFE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				BC1806C427CF49A90057679D /* Plane.swift */,
+				BC802D5427D5B4C8002BD536 /* ViewModel.swift */,
 				BC802D4C27D5A007002BD536 /* Photo.swift */,
 				BC7ECF8D27CCB46A00BC6AEC /* Rectangle.swift */,
 				BC7ECF9127CCB8CA00BC6AEC /* Color.swift */,
@@ -144,17 +142,10 @@
 			path = Model/Model;
 			sourceTree = "<group>";
 		};
-		BC7ECF9727CCCB0000BC6AEC /* Screenshots */ = {
-			isa = PBXGroup;
-			children = (
-				BC7ECF9827CCCB3300BC6AEC /* step1_1.png */,
-			);
-			path = Screenshots;
-			sourceTree = "<group>";
-		};
 		BCE3CB7327CC6D8E004F2AFE = {
 			isa = PBXGroup;
 			children = (
+				BCE3CBAF27CC6E84004F2AFE /* README.md */,
 				BCE3CB7E27CC6D8E004F2AFE /* DrawingApp */,
 				BCE3CB9527CC6D90004F2AFE /* DrawingAppTests */,
 				BCE3CB9F27CC6D90004F2AFE /* DrawingAppUITests */,
@@ -207,9 +198,7 @@
 			children = (
 				BCE3CB8527CC6D8E004F2AFE /* Main.storyboard */,
 				BCE3CB8A27CC6D8F004F2AFE /* LaunchScreen.storyboard */,
-				BC1806D027D06DEF0057679D /* RectangleView.swift */,
 				BC802D5227D5B000002BD536 /* CanvasView.swift */,
-				BC802D4E27D5A9F2002BD536 /* PhotoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,9 +225,7 @@
 		BCE3CBB427CC7100004F2AFE /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				BC7ECF9727CCCB0000BC6AEC /* Screenshots */,
 				BCE3CB8827CC6D8F004F2AFE /* Assets.xcassets */,
-				BCE3CBAF27CC6E84004F2AFE /* README.md */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -350,7 +337,6 @@
 				BCE3CB8C27CC6D8F004F2AFE /* LaunchScreen.storyboard in Resources */,
 				BCE3CB8927CC6D8F004F2AFE /* Assets.xcassets in Resources */,
 				BCE3CB8727CC6D8E004F2AFE /* Main.storyboard in Resources */,
-				BC7ECF9927CCCB3300BC6AEC /* step1_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +344,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7ECF9A27CCCB3300BC6AEC /* step1_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,10 +364,10 @@
 				BC802D4D27D5A007002BD536 /* Photo.swift in Sources */,
 				BC7ECF8E27CCB46A00BC6AEC /* Rectangle.swift in Sources */,
 				BC1806D927D0D3D10057679D /* Converter.swift in Sources */,
-				BC802D4F27D5A9F2002BD536 /* PhotoView.swift in Sources */,
 				BC1806D727D095E30057679D /* UIColorExtension.swift in Sources */,
 				BC1806BD27CF3E4C0057679D /* Log.swift in Sources */,
 				BCE3CB8427CC6D8E004F2AFE /* CanvasViewController.swift in Sources */,
+				BC802D5527D5B4C8002BD536 /* ViewModel.swift in Sources */,
 				BC7ECF9527CCB90600BC6AEC /* Factory.swift in Sources */,
 				BC802D5327D5B000002BD536 /* CanvasView.swift in Sources */,
 				BC1806C127CF41AE0057679D /* Size.swift in Sources */,
@@ -391,7 +376,6 @@
 				BCE3CB8027CC6D8E004F2AFE /* AppDelegate.swift in Sources */,
 				BC7ECF9227CCB8CA00BC6AEC /* Color.swift in Sources */,
 				BCE3CB8227CC6D8E004F2AFE /* SceneDelegate.swift in Sources */,
-				BC1806D127D06DEF0057679D /* RectangleView.swift in Sources */,
 				BC1806C527CF49A90057679D /* Plane.swift in Sources */,
 				BC1806CD27CF565D0057679D /* PanelViewController.swift in Sources */,
 			);
@@ -401,12 +385,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC802D5627D5C7C1002BD536 /* ViewModel.swift in Sources */,
 				BC1806C627CF51600057679D /* Point.swift in Sources */,
 				BC1806C727CF51620057679D /* Size.swift in Sources */,
 				BC1806C827CF51650057679D /* Alpha.swift in Sources */,
 				BC7ECF8F27CCB46A00BC6AEC /* Rectangle.swift in Sources */,
 				BCE3CB9727CC6D90004F2AFE /* PlaneTests.swift in Sources */,
 				BC1806CB27CF51760057679D /* Factory.swift in Sources */,
+				BC802D5727D5C7C6002BD536 /* Photo.swift in Sources */,
 				BC7ECF9327CCB8CA00BC6AEC /* Color.swift in Sources */,
 				BC1806CA27CF51730057679D /* Log.swift in Sources */,
 				BC1806C927CF516B0057679D /* Plane.swift in Sources */,
