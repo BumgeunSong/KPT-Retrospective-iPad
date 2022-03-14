@@ -12,20 +12,22 @@ class Rectangle: ViewModel {
     private(set) var color: Color
     private(set) var alpha: Alpha
     
-    init(id: ID, origin: Point, size: Size, color: Color, alpha: Alpha) {
+    static let prefix = "Rect"
+    
+    init(id: ID, origin: Point, size: Size, color: Color, alpha: Alpha, sequence: Int) {
         self.color = color
         self.alpha = alpha
-        super.init(id: id, origin: origin, size: size)
+        super.init(title: "\(Rectangle.prefix) \(sequence)", id: id, origin: origin, size: size)
     }
     
-    static func random() -> Rectangle {
+    static func random(of sequence: Int) -> Rectangle {
         let rectangleID = ID.random()
         let origin = Point.random()
         let size = Size.standard()
         let color = Color.random()
         let alpha = Alpha.random()
         
-        return Rectangle(id: rectangleID, origin: origin, size: size, color: color, alpha: alpha)
+        return Rectangle(id: rectangleID, origin: origin, size: size, color: color, alpha: alpha, sequence: sequence)
     }
 }
 

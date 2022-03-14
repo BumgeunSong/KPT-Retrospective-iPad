@@ -27,7 +27,7 @@ class PanelViewController: UIViewController {
     @IBOutlet weak var heightStpper: UIStepper!
     
     private var aspectRatio: Double?
-   
+    var completion: (() -> ())?
     @IBOutlet weak var textField: UITextField!
     
     enum Event {
@@ -217,8 +217,13 @@ extension PanelViewController {
 
 extension PanelViewController {
     
+    func listenTouchColorButton(completion: @escaping () -> ()) {
+        self.completion = completion
+    }
+    
     @IBAction func didTouchColorButton(_ sender: UIButton) {
-        NotificationCenter.default.post(name: PanelViewController.Event.didTouchColorButton, object: self)
+        completion?()
+//        NotificationCenter.default.post(name: PanelViewController.Event.didTouchColorButton, object: self)
     }
     
     @objc func didSetColor(_ notification: Notification) {

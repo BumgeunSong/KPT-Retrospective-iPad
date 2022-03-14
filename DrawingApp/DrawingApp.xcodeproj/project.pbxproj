@@ -23,6 +23,7 @@
 		BC1806D927D0D3D10057679D /* ConverterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1806D827D0D3D10057679D /* ConverterExtension.swift */; };
 		BC70F81B27DB83A400F880F0 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC802D6A27DB4498002BD536 /* Label.swift */; };
 		BC70F81C27DB83AC00F880F0 /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC802D6027D72C10002BD536 /* ID.swift */; };
+		BC70F8A527DCDB9900F880F0 /* LayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70F8A427DCDB9900F880F0 /* LayerTableViewController.swift */; };
 		BC7ECF8E27CCB46A00BC6AEC /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF8D27CCB46A00BC6AEC /* Rectangle.swift */; };
 		BC7ECF8F27CCB46A00BC6AEC /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF8D27CCB46A00BC6AEC /* Rectangle.swift */; };
 		BC7ECF9227CCB8CA00BC6AEC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ECF9127CCB8CA00BC6AEC /* Color.swift */; };
@@ -73,6 +74,7 @@
 		BC1806D027D06DEF0057679D /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		BC1806D627D095E30057679D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BC1806D827D0D3D10057679D /* ConverterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterExtension.swift; sourceTree = "<group>"; };
+		BC70F8A427DCDB9900F880F0 /* LayerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerTableViewController.swift; sourceTree = "<group>"; };
 		BC7ECF8D27CCB46A00BC6AEC /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Rectangle.swift; path = DrawingApp/Model/Model/Rectangle.swift; sourceTree = SOURCE_ROOT; };
 		BC7ECF9127CCB8CA00BC6AEC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BC7ECF9827CCCB3300BC6AEC /* step1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step1_1.png; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				BCE3CB8327CC6D8E004F2AFE /* CanvasViewController.swift */,
+				BC70F8A427DCDB9900F880F0 /* LayerTableViewController.swift */,
 				BC1806CC27CF565D0057679D /* PanelViewController.swift */,
 			);
 			path = Controller;
@@ -387,6 +390,7 @@
 				BCE3CB8427CC6D8E004F2AFE /* CanvasViewController.swift in Sources */,
 				BC802D5B27D5F96F002BD536 /* ViewModel.swift in Sources */,
 				BC1806C127CF41AE0057679D /* Size.swift in Sources */,
+				BC70F8A527DCDB9900F880F0 /* LayerTableViewController.swift in Sources */,
 				BC1806BF27CF40970057679D /* Alpha.swift in Sources */,
 				BC1806C327CF41C30057679D /* Point.swift in Sources */,
 				BCE3CB8027CC6D8E004F2AFE /* AppDelegate.swift in Sources */,

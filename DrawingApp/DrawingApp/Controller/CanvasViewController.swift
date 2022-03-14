@@ -16,6 +16,7 @@ class CanvasViewController: UIViewController,
     private var viewMap = [UIView: ViewModel]()
     private let photoPicker = UIImagePickerController()
     private var temporaryView: UIView?
+    private var layerTableVC: LayerTableViewController?
     
     enum Event {
         static let isDragging = Notification.Name("drag")
@@ -27,6 +28,7 @@ class CanvasViewController: UIViewController,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         observePlane()
         observePanel()
         
@@ -34,6 +36,14 @@ class CanvasViewController: UIViewController,
         setUpTapRecognizer()
         
         photoPicker.delegate = self
+        
+        guard let layerTableVC = splitViewController?.viewController(for: .supplementary) as? LayerTableViewController else {
+            return
+        }
+        self.layerTableVC = layerTableVC
+        layerTableVC.didSelectRowClosure = { index in
+            self.plane.select(at: index)
+        }
     }
 }
 
@@ -88,11 +98,11 @@ extension CanvasViewController {
     @objc func didAddViewModel(_ notification: Notification) {
         guard let newViewModel = notification.userInfo?[Plane.InfoKey.added] as? ViewModel else { return }
         guard let newView = ViewFactory.create(from: newViewModel) else { return }
-        
+
         map(newView, to: newViewModel)
-        
+
         if newView is UILabel { resizeToFit(newViewModel, for: newView) }
-        
+
         view.addSubview(newView)
         setupPanRecognizer(newView)
     }
@@ -179,6 +189,8 @@ extension CanvasViewController {
 // MARK: - Use Case: Change CanvasView
 
 extension CanvasViewController {
+    
+    
     
     @objc func didTouchColorButton(_ notification: Notification) {
         plane.setSelected()
@@ -302,3 +314,49 @@ extension CanvasViewController {
         return viewMap[view]
     }
 }
+
+
+//
+//class ObservedClass: NSObject {
+//    @objc dynamic var value: CGFloat = 0
+//}
+//
+//class Observer {
+//    var kvoToken: NSKeyValueObservation?
+//
+//    func observe(object: ObservedClass) {
+//        kvoToken = object.observe(\.value, options: .new, changeHandler: { object, change in
+//            guard let value = change.newValue else { return }
+//            print("New Value: \(value)")
+//        })
+//    }
+//
+//    deinit {
+//        kvoToken?.invalidate()
+//    }
+//}
+//
+//typealias PizzaClosure = (String) -> Void
+//
+//class Pizzaiolo {
+//    private var completion: PizzaClosure?
+//
+//    func makePizza(completion: @escaping PizzaClosure) {
+//        self.completion = completion
+//        // cooking
+//
+//    }
+//
+//    private func onPizzaIsReady(pizza: String) {
+//        self.completion?(pizza)
+//        self.completion = nil
+//    }
+//}
+//
+//class Customer {
+//    func askToMakePizza(pizzaiolo: Pizzaiolo) {
+//        pizzaiolo.makePizza { pizza in
+//            // Something when pizza is ready
+//        }
+//    }
+//}

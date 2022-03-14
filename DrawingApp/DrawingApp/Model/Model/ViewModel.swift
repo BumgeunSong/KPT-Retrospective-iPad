@@ -8,15 +8,16 @@
 import Foundation
 
 class ViewModel {
-    
+    private(set) var title: String
     private(set) var id: ID
     private(set) var origin: Point
     private(set) var size: Size
     
-    init(id: ID, origin: Point, size: Size) {
+    init(title: String, id: ID, origin: Point, size: Size) {
         self.id = id
         self.origin = origin
         self.size = size
+        self.title = title
     }
     
     var center: Point {

@@ -25,7 +25,7 @@ class Plane {
         static let set = "set"
     }
     
-    private var viewModels: [ViewModel] = [] {
+    private(set) var viewModels: [ViewModel] = [] {
         didSet {
             guard let newModel = viewModels.last else { return }
             Log.info("Added: \(newModel)")
@@ -55,21 +55,27 @@ class Plane {
     }
     
     func addRectangle() {
-        let newRectangle = Rectangle.random()
+        let newRectangle = Rectangle.random(of: rectangleCount+1)
         viewModels.append(newRectangle)
         NotificationCenter.default.post(name: Plane.Event.didAddViewModel, object: self, userInfo: [Plane.InfoKey.added: newRectangle])
     }
     
     func addPhoto(data: Data) {
-        let newPhoto = Photo.random(from: data)
+        let newPhoto = Photo.random(of: photoCount+1, from: data)
         viewModels.append(newPhoto)
         NotificationCenter.default.post(name: Plane.Event.didAddViewModel, object: self, userInfo: [Plane.InfoKey.added: newPhoto])
     }
     
     func addLabel() {
-        let newLabel = Label.random()
+        let newLabel = Label.random(of: labelCount+1)
         viewModels.append(newLabel)
         NotificationCenter.default.post(name: Plane.Event.didAddViewModel, object: self, userInfo: [Plane.InfoKey.added: newLabel])
+    }
+    
+    func select(at index: Int) {
+        let unselected = selected
+        self.selected = viewModels[index]
+        NotificationCenter.default.post(name: Plane.Event.didSelectViewModel, object: self, userInfo: [Plane.InfoKey.unselected: unselected as Any, Plane.InfoKey.selected: selected as Any])
     }
     
     func tap(on point: Point) {

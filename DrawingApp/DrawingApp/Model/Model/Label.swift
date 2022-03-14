@@ -11,20 +11,22 @@ class Label: ViewModel {
     private(set) var text: String
     private(set) var fontSize: Float
     
-    init(id: ID, origin: Point, size: Size, text: String, fontSize: Float) {
+    static let prefix = "Text"
+    
+    init(id: ID, origin: Point, size: Size, text: String, fontSize: Float, sequence: Int) {
         self.text = text
         self.fontSize = fontSize
-        super.init(id: id, origin: origin, size: size)
+        super.init(title:"\(Label.prefix) \(sequence)" ,id: id, origin: origin, size: size)
     }
     
-    static func random() -> Label {
+    static func random(of sequence: Int) -> Label {
         let labelID = ID.random()
         let origin = Point.random()
         let size = Size.standard()
         let text = dummyString()
         let fontSize = Float.random(in: 16...32)
         
-        return Label(id: labelID, origin: origin, size: size, text: text, fontSize: fontSize)
+        return Label(id: labelID, origin: origin, size: size, text: text, fontSize: fontSize, sequence: sequence)
     }
     
     static let dummyString: () -> String = {
@@ -46,3 +48,5 @@ extension Label: CustomStringConvertible {
         return "(\(id)), \(origin), \(size), \(text), \(fontSize)p"
     }
 }
+
+
