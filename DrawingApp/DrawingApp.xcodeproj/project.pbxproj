@@ -45,7 +45,8 @@
 		BCE3CB9727CC6D90004F2AFE /* PlaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CB9627CC6D90004F2AFE /* PlaneTests.swift */; };
 		BCE3CBA127CC6D90004F2AFE /* DrawingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CBA027CC6D90004F2AFE /* DrawingAppUITests.swift */; };
 		BCE3CBA327CC6D90004F2AFE /* DrawingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CBA227CC6D90004F2AFE /* DrawingAppUITestsLaunchTests.swift */; };
-		BCF9B78027DF0407008B4879 /* LayerPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF9B77F27DF0407008B4879 /* LayerPopupController.swift */; };
+		BCF9B78027DF0407008B4879 /* PopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF9B77F27DF0407008B4879 /* PopupController.swift */; };
+		BCF9B78227DF0ACB008B4879 /* LayerPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF9B78127DF0ACB008B4879 /* LayerPopupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +98,8 @@
 		BCE3CBA027CC6D90004F2AFE /* DrawingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAppUITests.swift; sourceTree = "<group>"; };
 		BCE3CBA227CC6D90004F2AFE /* DrawingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BCE3CBAF27CC6E84004F2AFE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		BCF9B77F27DF0407008B4879 /* LayerPopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerPopupController.swift; sourceTree = "<group>"; };
+		BCF9B77F27DF0407008B4879 /* PopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupController.swift; sourceTree = "<group>"; };
+		BCF9B78127DF0ACB008B4879 /* LayerPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerPopupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,7 +230,8 @@
 				BCE3CB8327CC6D8E004F2AFE /* CanvasViewController.swift */,
 				BC70F8A427DCDB9900F880F0 /* LayerTableViewController.swift */,
 				BC1806CC27CF565D0057679D /* PanelViewController.swift */,
-				BCF9B77F27DF0407008B4879 /* LayerPopupController.swift */,
+				BCF9B77F27DF0407008B4879 /* PopupController.swift */,
+				BCF9B78127DF0ACB008B4879 /* LayerPopupViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				BC70F8A527DCDB9900F880F0 /* LayerTableViewController.swift in Sources */,
 				BC1806BF27CF40970057679D /* Alpha.swift in Sources */,
 				BC1806C327CF41C30057679D /* Point.swift in Sources */,
+				BCF9B78227DF0ACB008B4879 /* LayerPopupViewController.swift in Sources */,
 				BCE3CB8027CC6D8E004F2AFE /* AppDelegate.swift in Sources */,
 				BC802D6127D72C10002BD536 /* ID.swift in Sources */,
 				BC7ECF9227CCB8CA00BC6AEC /* Color.swift in Sources */,
@@ -403,7 +407,7 @@
 				BC802D6B27DB4498002BD536 /* Label.swift in Sources */,
 				BC1806D127D06DEF0057679D /* ViewFactory.swift in Sources */,
 				BC1806C527CF49A90057679D /* Plane.swift in Sources */,
-				BCF9B78027DF0407008B4879 /* LayerPopupController.swift in Sources */,
+				BCF9B78027DF0407008B4879 /* PopupController.swift in Sources */,
 				BC1806CD27CF565D0057679D /* PanelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

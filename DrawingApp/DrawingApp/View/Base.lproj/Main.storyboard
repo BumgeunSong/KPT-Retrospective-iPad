@@ -118,6 +118,61 @@
             </objects>
             <point key="canvasLocation" x="842" y="2123"/>
         </scene>
+        <!--Popup-->
+        <scene sceneID="Kd6-Uo-zYh">
+            <objects>
+                <viewController storyboardIdentifier="popup" id="S0m-O0-iCa" userLabel="Popup" customClass="LayerPopupViewController" customModule="DrawingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="je7-2R-t7C">
+                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wvx-ZU-Ayy">
+                                <rect key="frame" x="0.0" y="24" width="1180" height="776"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKr-dd-sc8">
+                                        <rect key="frame" x="0.0" y="0.0" width="1180" height="194"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="S0m-O0-iCa" eventType="touchUpInside" id="osb-7h-vx8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgY-QS-WR8">
+                                        <rect key="frame" x="0.0" y="194" width="1180" height="194"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVq-m1-75f">
+                                        <rect key="frame" x="0.0" y="388" width="1180" height="194"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j23-l0-LUL">
+                                        <rect key="frame" x="0.0" y="582" width="1180" height="194"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TaB-ox-yRc"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wvx-ZU-Ayy" firstAttribute="top" secondItem="TaB-ox-yRc" secondAttribute="top" id="B6j-hb-RhE"/>
+                            <constraint firstItem="TaB-ox-yRc" firstAttribute="bottom" secondItem="wvx-ZU-Ayy" secondAttribute="bottom" id="LCb-Mp-Qb1"/>
+                            <constraint firstItem="TaB-ox-yRc" firstAttribute="trailing" secondItem="wvx-ZU-Ayy" secondAttribute="trailing" id="eBa-8E-dku"/>
+                            <constraint firstItem="wvx-ZU-Ayy" firstAttribute="leading" secondItem="TaB-ox-yRc" secondAttribute="leading" id="s11-Zg-haP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsq-Eh-yJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1547" y="2111"/>
+        </scene>
         <!--Split View Controller-->
         <scene sceneID="cJd-5Y-eBh">
             <objects>
