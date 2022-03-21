@@ -91,7 +91,7 @@ extension LayerTableViewController {
         
         guard let layer = fetchLayer?(indexPath.row) else { return cell }
         config.text = layer.title
-        let layerType = type(of: layer)
+        
         guard let symbol = ViewFactory.createSymbol(from: layer) else { return cell }
         config.image = symbol
         
