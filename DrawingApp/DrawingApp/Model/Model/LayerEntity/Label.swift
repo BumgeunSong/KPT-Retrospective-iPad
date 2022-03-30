@@ -9,6 +9,7 @@ import Foundation
 
 class Label: Layer {
     private(set) var getText: String
+    
     private(set) var fontSize: Float
     
     init(title: String, id: ID, origin: Point, size: Size, text: String, fontSize: Float) {

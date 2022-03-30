@@ -39,6 +39,18 @@
 		BC9E8DE527F1958A00D65C41 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8DE427F1958A00D65C41 /* UILabel.swift */; };
 		BC9E8DE827F195A900D65C41 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8DE727F195A900D65C41 /* UITextView.swift */; };
 		BC9E8DEB27F195BC00D65C41 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8DEA27F195BC00D65C41 /* UIImageView.swift */; };
+		BC9E8DF727F2A79E00D65C41 /* Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8DF627F2A79E00D65C41 /* Layers.swift */; };
+		BC9E8DF827F2A79E00D65C41 /* Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8DF627F2A79E00D65C41 /* Layers.swift */; };
+		BC9E8DFA27F2A81400D65C41 /* AddService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8DF927F2A81400D65C41 /* AddService.swift */; };
+		BC9E8DFB27F2A81400D65C41 /* AddService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8DF927F2A81400D65C41 /* AddService.swift */; };
+		BC9E8DFD27F2AA2500D65C41 /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8DFC27F2AA2500D65C41 /* CanvasViewModel.swift */; };
+		BC9E8DFE27F2AA2600D65C41 /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8DFC27F2AA2500D65C41 /* CanvasViewModel.swift */; };
+		BC9E8E0727F2C2AA00D65C41 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8E0627F2C2AA00D65C41 /* ViewConfiguration.swift */; };
+		BC9E8E0827F2C2AA00D65C41 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8E0627F2C2AA00D65C41 /* ViewConfiguration.swift */; };
+		BC9E8E0A27F2DE0000D65C41 /* SelectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8E0927F2DE0000D65C41 /* SelectService.swift */; };
+		BC9E8E0B27F2DE0000D65C41 /* SelectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8E0927F2DE0000D65C41 /* SelectService.swift */; };
+		BC9E8E0D27F2E65700D65C41 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8E0C27F2E65700D65C41 /* Observable.swift */; };
+		BC9E8E0E27F2E65700D65C41 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E8E0C27F2E65700D65C41 /* Observable.swift */; };
 		BCE3CB8027CC6D8E004F2AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CB7F27CC6D8E004F2AFE /* AppDelegate.swift */; };
 		BCE3CB8227CC6D8E004F2AFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CB8127CC6D8E004F2AFE /* SceneDelegate.swift */; };
 		BCE3CB8427CC6D8E004F2AFE /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3CB8327CC6D8E004F2AFE /* CanvasViewController.swift */; };
@@ -93,6 +105,12 @@
 		BC9E8DE427F1958A00D65C41 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		BC9E8DE727F195A900D65C41 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		BC9E8DEA27F195BC00D65C41 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		BC9E8DF627F2A79E00D65C41 /* Layers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layers.swift; sourceTree = "<group>"; };
+		BC9E8DF927F2A81400D65C41 /* AddService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddService.swift; sourceTree = "<group>"; };
+		BC9E8DFC27F2AA2500D65C41 /* CanvasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewModel.swift; sourceTree = "<group>"; };
+		BC9E8E0627F2C2AA00D65C41 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+		BC9E8E0927F2DE0000D65C41 /* SelectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectService.swift; sourceTree = "<group>"; };
+		BC9E8E0C27F2E65700D65C41 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		BCE3CB7C27CC6D8E004F2AFE /* DrawingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE3CB7F27CC6D8E004F2AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE3CB8127CC6D8E004F2AFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +171,7 @@
 				BCF9B78C27E1FF49008B4879 /* LayerEntity */,
 				BC1806C427CF49A90057679D /* Plane.swift */,
 				BCF9B77A27DEEAC8008B4879 /* LayerFactory.swift */,
+				BC9E8E0227F2C1FD00D65C41 /* Refactoring_MVVM */,
 			);
 			name = Model;
 			path = Model/Model;
@@ -164,6 +183,20 @@
 				BC7ECF9827CCCB3300BC6AEC /* step1_1.png */,
 			);
 			path = Screenshots;
+			sourceTree = "<group>";
+		};
+		BC9E8E0227F2C1FD00D65C41 /* Refactoring_MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				BC9E8DF627F2A79E00D65C41 /* Layers.swift */,
+				BC9E8DF927F2A81400D65C41 /* AddService.swift */,
+				BC9E8E0927F2DE0000D65C41 /* SelectService.swift */,
+				BC9E8E0627F2C2AA00D65C41 /* ViewConfiguration.swift */,
+				BC9E8DFC27F2AA2500D65C41 /* CanvasViewModel.swift */,
+				BC9E8E0C27F2E65700D65C41 /* Observable.swift */,
+				BCE3CB8327CC6D8E004F2AFE /* CanvasViewController.swift */,
+			);
+			path = Refactoring_MVVM;
 			sourceTree = "<group>";
 		};
 		BCE3CB7327CC6D8E004F2AFE = {
@@ -234,7 +267,6 @@
 		BCE3CBB227CC7053004F2AFE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BCE3CB8327CC6D8E004F2AFE /* CanvasViewController.swift */,
 				BCF9B78327DF2291008B4879 /* LayerTableViewController.swift */,
 				BC1806CC27CF565D0057679D /* PanelViewController.swift */,
 			);
@@ -419,10 +451,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC802D5D27D5FA29002BD536 /* Photo.swift in Sources */,
+				BC9E8DF727F2A79E00D65C41 /* Layers.swift in Sources */,
 				BC9E8DEB27F195BC00D65C41 /* UIImageView.swift in Sources */,
 				BC1806D927D0D3D10057679D /* ConverterExtension.swift in Sources */,
 				BCF9B78B27E1FF41008B4879 /* Rectangle.swift in Sources */,
+				BC9E8E0A27F2DE0000D65C41 /* SelectService.swift in Sources */,
 				BC1806D727D095E30057679D /* UIColorExtension.swift in Sources */,
+				BC9E8E0D27F2E65700D65C41 /* Observable.swift in Sources */,
 				BC1806BD27CF3E4C0057679D /* Log.swift in Sources */,
 				BC9E8DE527F1958A00D65C41 /* UILabel.swift in Sources */,
 				BCE3CB8427CC6D8E004F2AFE /* CanvasViewController.swift in Sources */,
@@ -433,9 +468,12 @@
 				BC1806C327CF41C30057679D /* Point.swift in Sources */,
 				BC9E8DDC27F1829600D65C41 /* PostIt.swift in Sources */,
 				BCE3CB8027CC6D8E004F2AFE /* AppDelegate.swift in Sources */,
+				BC9E8E0727F2C2AA00D65C41 /* ViewConfiguration.swift in Sources */,
+				BC9E8DFA27F2A81400D65C41 /* AddService.swift in Sources */,
 				BC802D6127D72C10002BD536 /* ID.swift in Sources */,
 				BC7ECF9227CCB8CA00BC6AEC /* Color.swift in Sources */,
 				BC9E8DE227F1956800D65C41 /* UIView.swift in Sources */,
+				BC9E8DFD27F2AA2500D65C41 /* CanvasViewModel.swift in Sources */,
 				BCE3CB8227CC6D8E004F2AFE /* SceneDelegate.swift in Sources */,
 				BC9E8DE827F195A900D65C41 /* UITextView.swift in Sources */,
 				BC802D6B27DB4498002BD536 /* Label.swift in Sources */,
@@ -451,19 +489,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9E8DDD27F1829600D65C41 /* PostIt.swift in Sources */,
+				BC9E8E0E27F2E65700D65C41 /* Observable.swift in Sources */,
 				BC1806C627CF51600057679D /* Point.swift in Sources */,
 				BCF9B77C27DEF092008B4879 /* LayerFactory.swift in Sources */,
 				BC802D5E27D60092002BD536 /* Layer.swift in Sources */,
 				BCF9B78D27E2002D008B4879 /* Rectangle.swift in Sources */,
+				BC9E8DFE27F2AA2600D65C41 /* CanvasViewModel.swift in Sources */,
+				BC9E8DFB27F2A81400D65C41 /* AddService.swift in Sources */,
 				BC1806C727CF51620057679D /* Size.swift in Sources */,
 				BC1806C827CF51650057679D /* Alpha.swift in Sources */,
 				BC70F81B27DB83A400F880F0 /* Label.swift in Sources */,
 				BC802D5F27D60095002BD536 /* Photo.swift in Sources */,
 				BCE3CB9727CC6D90004F2AFE /* PlaneTests.swift in Sources */,
 				BC70F81C27DB83AC00F880F0 /* ID.swift in Sources */,
+				BC9E8E0827F2C2AA00D65C41 /* ViewConfiguration.swift in Sources */,
 				BC7ECF9327CCB8CA00BC6AEC /* Color.swift in Sources */,
 				BC1806CA27CF51730057679D /* Log.swift in Sources */,
+				BC9E8DF827F2A79E00D65C41 /* Layers.swift in Sources */,
 				BC1806C927CF516B0057679D /* Plane.swift in Sources */,
+				BC9E8E0B27F2DE0000D65C41 /* SelectService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
