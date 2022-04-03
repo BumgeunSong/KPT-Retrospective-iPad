@@ -162,6 +162,30 @@ class CanvasViewModel {
       // ...
 ```
 
+** 서드파티 라이브러리 대신 간단한 DI Container를 직접 구현
+
+```swift
+typealias FactoryClosure = (DIContainer) -> AnyObject
+
+protocol DIContainable {
+    func register<Service>(type: Service.Type, factoryClosure: @escaping FactoryClosure)
+    func resolve<Service>(type: Service.Type) -> Service?
+}
+
+class DIContainer: DIContainable {
+    var services = Dictionary<String, FactoryClosure>()
+    
+    func register<Service>(type: Service.Type, factoryClosure: @escaping FactoryClosure) {
+        services["\(type)"] = factoryClosure
+    }
+    
+    func resolve<Service>(type: Service.Type) -> Service? {
+        return services["\(type)"]?(self) as? Service
+    }
+}
+```
+
+** 런타임 시점에 DIContainer를 사용해 객체를 조합
 
 ```swift
 private let container: DIContainable = {
@@ -200,7 +224,10 @@ private let container: DIContainable = {
 
 
 ## 인터페이스 분리
-프로토콜을 사용해 속성 변경을 추상화하고 인터페이스를 분리. (AlphaMutable, TextMutable, ColorMutable)
+- 프로토콜을 사용해 속성 변경을 추상화하고 인터페이스를 분리.
+- 컬러와 알파를 둘다 바꿀 수 있는 Rectangle, 알파만 바꿀 수 있는 TextMutable, 텍스트만 바꿀 수 있는 TextMutable로 설정. 
+- 각각 클라이언트가 사용하지 않는 인터페이스는 포함하지 않도록 분리. 
+
 
 ```swift
 protocol ColorMutable {
