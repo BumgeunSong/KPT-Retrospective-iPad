@@ -14,7 +14,6 @@ protocol LayerContainable: AnyObject {
 
 class PassivePlane: LayerContainable {
     static let shared = PassivePlane() as LayerContainable
-    // Use singleton for different services to access
     
     var layers: [Layer]
     var selected: Layer?
@@ -23,5 +22,4 @@ class PassivePlane: LayerContainable {
         self.layers = layers
         self.selected = selected
     }
-    
 }
