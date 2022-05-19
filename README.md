@@ -13,44 +13,9 @@ by Eddy
 
 # 주요 고민 및 구현
 
-## MVVM 리팩토링
-* 초반 MVC 구조 설계 후 MVVM 구조로 리팩토링. 
-* ViewController가 가지고 있던 Presentation logic을 뷰 모델로 분리. 
-* 도메인 모델인 Plane이 가지고 있던 Add, Select 등의 비즈니스 로직을 Service로 분리.
-* CanvasViewModel이 CanvasView의 추상화 상태(State)를 저장
-
-![](https://user-images.githubusercontent.com/17468015/160997465-fe851675-028f-4738-951c-d5d31beb7d22.png)
-
-
-## 바인딩 메커니즘 구현
-* 커스텀 Observable을 구현해 ViewModel과 View를 바인딩.
-
-```swift
-
-class Observable<T> {
-    typealias Listener = (T) -> Void
-    var listener: Listener?
+<details>
+        <summary><h3>팩토리 패턴으로 생성과 사용을 분리</h3></summary>
     
-    var value: T {
-        didSet {
-            listener?(value)
-        }
-    }
-    
-    init(_ value: T) {
-        self.value = value
-    }
-    
-    func bind(listener: Listener?) {
-        self.listener = listener
-        listener?(value)
-    }
-}
-
-```
-
-
-## 팩토리 패턴으로 생성과 사용을 분리
 * 팩토리 메서드를 사용해 Layer와 View를 생성. Layer를 생성하는 AddService가 생성 로직을 몰라도 되도록 추상화함.
 
 ```swift
@@ -83,9 +48,11 @@ enum LayerFactory {
 }
 
 ```
+</details>
+    
+<details>
+        <summary><h3>결합도를 낮추기 위한 의존성 역전 & 주입</h3></summary>
 
-
-## 의존성 역전 & 주입
 * 프로토콜 `LayerAddable`, `LayerSelectable`, `LayerContainable`  사용해 ViewModel과 모델 사이의 의존성을 역전. 
 * SceneDelegate에서 DI 컨테이너를 생성하고 전달해 의존성을 주입.
 
@@ -197,9 +164,10 @@ private let container: DIContainable = {
         return container
     }()
 ```
+</details>
+    <details>
+        <summary><h3>간단한 DI Container를 직접 구현</h3></summary>
 
-
-** 서드파티 라이브러리 대신 간단한 DI Container를 직접 구현
 
 ```swift
 typealias FactoryClosure = (DIContainer) -> AnyObject
@@ -258,9 +226,10 @@ private let container: DIContainable = {
         return container
     }()
 ```
+</details>
+    <details>
+        <summary><h3>인터페이스 분리</h3></summary>
 
-
-## 인터페이스 분리
 - 프로토콜을 사용해 속성 변경을 추상화하고 인터페이스를 분리.
 - 컬러와 알파를 둘다 바꿀 수 있는 Rectangle, 알파만 바꿀 수 있는 TextMutable, 텍스트만 바꿀 수 있는 TextMutable로 설정. 
 - 각각 클라이언트가 사용하지 않는 인터페이스는 포함하지 않도록 분리. 
@@ -347,8 +316,10 @@ extension Label: TextMutable {
     }
 }
 ```
+</details>
+    <details>
+        <summary><h3>GestureRecognizer를 활용해 드래그 구현</h3></summary>
 
-## GestureRecognizer를 활용해 드래그 구현
 - 특정 뷰를 드래그했을 때 반투명한 임시 뷰가 생성되어 따라오도록 구현.
 - 드래그를 끝내면 임시 뷰는 사라지고 새로운 위치로 이동. 
 
@@ -401,3 +372,4 @@ extension Label: TextMutable {
         return viewMap[view]
     }
 ```
+</details>
